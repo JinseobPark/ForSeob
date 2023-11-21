@@ -7,3 +7,4 @@
 #include "Input/InputClass.h"
 #include "Sound/SoundClass.h"
 #include "Physics/PhysicsClass.h"
+#include "Object/ObjectManager.h"

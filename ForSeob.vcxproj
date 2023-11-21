@@ -157,11 +157,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\Component\Camera\Camera.cpp" />
+    <ClCompile Include="src\Component\Model\Model.cpp" />
+    <ClCompile Include="src\Component\Model\Texture.cpp" />
+    <ClCompile Include="src\Component\Model\TextureManager.cpp" />
     <ClCompile Include="src\Engine.cpp" />
     <ClCompile Include="src\glad.c" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\Object\ObjectClass.cpp" />
-    <ClCompile Include="src\Object\ObjectFactory.cpp" />
     <ClCompile Include="src\Object\ObjectManager.cpp" />
     <ClCompile Include="src\Systems\GameLogic\SceneManager.cpp" />
     <ClCompile Include="src\Systems\Graphics\Shader\Buffer.cpp" />
@@ -176,9 +179,18 @@
     <ClCompile Include="src\Systems\Timer\TimerClass.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Component\Camera\Camera.h" />
+    <ClInclude Include="src\Component\Component.h" />
+    <ClInclude Include="src\Component\ComponentHeaders.h" />
+    <ClInclude Include="src\Component\ComponentType.h" />
+    <ClInclude Include="src\Component\Model\MaterialManager.h" />
+    <ClInclude Include="src\Component\Model\Model.h" />
+    <ClInclude Include="src\Component\Model\ModelManager.h" />
+    <ClInclude Include="src\Component\Model\Texture.h" />
+    <ClInclude Include="src\Component\Model\TextureManager.h" />
+    <ClInclude Include="src\Component\Transform.h" />
     <ClInclude Include="src\Engine.h" />
     <ClInclude Include="src\Object\ObjectClass.h" />
-    <ClInclude Include="src\Object\ObjectFactory.h" />
     <ClInclude Include="src\Object\ObjectManager.h" />
     <ClInclude Include="src\Systems\GameLogic\SceneManager.h" />
     <ClInclude Include="src\Systems\Graphics\Shader\Buffer.h" />

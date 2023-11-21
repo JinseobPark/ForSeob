@@ -1,4 +1,5 @@
 #include "GameLogic.h"
+#include "Object/ObjectManager.h"
 
 GameLogic* mGAMELOGIC = nullptr;
 
@@ -10,9 +11,10 @@ GameLogic::GameLogic()
 
 void GameLogic::Initialize()
 {
-
+	camera = mOBM->CreateCamera();
 }
 
 void GameLogic::Update(float dt)
 {
+	float cameraSpeed = 0.01f;
 }

@@ -19,5 +19,4 @@ void TimerClass::Update(float)
     _deltaTime = currentFrame - _lastFrame;
     _lastFrame = currentFrame;
     _totalTime += _deltaTime;
-
 }

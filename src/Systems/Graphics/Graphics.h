@@ -3,6 +3,9 @@
 #include "Systems/SystemHeader.h"
 #include "Shader/Buffer.h"
 #include "Shader/ShaderManager.h"
+#include "Component/Camera/Camera.h"
+
+class Camera;
 
 struct GraphicsData
 {
@@ -20,10 +23,14 @@ public:
 	void Update(float dt) override;
 	void Shutdown();
 
+public:
+	Camera* m_camera = nullptr;
+
 private:
 	ShaderManager* _shader_manager = nullptr;
 	Buffer* _buffer = nullptr;
 
 	void Draw();
+
 };
 extern Graphics* mGRAPHICS;

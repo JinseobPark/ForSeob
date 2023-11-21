@@ -17,12 +17,12 @@ bool Engine::initialize()
 	bool result = true;
 	AddSystem(new Application());
 	AddSystem(new Graphics());
+	AddSystem(new ObjectManager());
 	AddSystem(new TimerClass());
 	AddSystem(new PhysicsClass());
 	AddSystem(new InputClass());
 	AddSystem(new SoundClass());
 	AddSystem(new GameLogic());
-
 
 	for (auto sys : gameSystems)
 		sys->Initialize();
