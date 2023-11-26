@@ -18,9 +18,9 @@ bool Engine::initialize()
 	AddSystem(new Application());
 	AddSystem(new Graphics());
 	AddSystem(new ObjectManager());
+	AddSystem(new InputClass());
 	AddSystem(new TimerClass());
 	AddSystem(new PhysicsClass());
-	AddSystem(new InputClass());
 	AddSystem(new SoundClass());
 	AddSystem(new GameLogic());
 
